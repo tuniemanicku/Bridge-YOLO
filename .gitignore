@@ -1,0 +1,7 @@
+.json
+.txt
+.pt
+/labels
+/images
+yolo11n.pt
+/runs
