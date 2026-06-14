@@ -1,0 +1,73 @@
+description: Ultralytics YOLO11n model trained on /train/cache/dataset/data.yaml
+author: Ultralytics
+date: '2026-04-26T02:23:52.271290'
+version: 8.4.41
+license: AGPL-3.0 License (https://ultralytics.com/license)
+docs: https://docs.ultralytics.com
+stride: 32
+task: detect
+batch: 1
+imgsz:
+- 640
+- 640
+names:
+  0: 2C
+  1: 2D
+  2: 2H
+  3: 2S
+  4: 3C
+  5: 3D
+  6: 3H
+  7: 3S
+  8: 4C
+  9: 4D
+  10: 4H
+  11: 4S
+  12: 5C
+  13: 5D
+  14: 5H
+  15: 5S
+  16: 6C
+  17: 6D
+  18: 6H
+  19: 6S
+  20: 7C
+  21: 7D
+  22: 7H
+  23: 7S
+  24: 8C
+  25: 8D
+  26: 8H
+  27: 8S
+  28: 9C
+  29: 9D
+  30: 9H
+  31: 9S
+  32: AC
+  33: AD
+  34: AH
+  35: AS
+  36: JC
+  37: JD
+  38: JH
+  39: JS
+  40: KC
+  41: KD
+  42: KH
+  43: KS
+  44: QC
+  45: QD
+  46: QH
+  47: QS
+  48: TC
+  49: TD
+  50: TH
+  51: TS
+args:
+  batch: 1
+  fraction: 1.0
+  half: false
+  int8: false
+  nms: false
+channels: 3
+end2end: false
