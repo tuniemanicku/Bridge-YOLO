@@ -9,22 +9,33 @@ def train_yolo_model():
         data="data.yaml",
         epochs=100,
         imgsz=640,
+
+        # Generate 2 augmented outputs per training example
+        augment=True,
+
+        # Disable augmentations you don't want
         mosaic=0.0,
         fliplr=0.0,
         flipud=0.0,
-        degrees=20.0,
-        translate=0.05,
-        scale=0.3,
+        translate=0.0,
+        scale=0.0,
+        perspective=0.0,
 
-        hsv_h = 0.01,
-        hsv_s = 0.3,
-        hsv_v = 0.4,
+        # Rotation
+        degrees=20.0,   # random rotation between -20° and +20°
 
-        perspective = 0.001,
+        # Color adjustments
+        hsv_s=0.05,     # saturation ±5%
+        hsv_v=0.10,     # brightness/value ±10%
+
+        # Exposure approximation
+        # YOLO doesn't expose separate "exposure";
+        # hsv_v is the closest equivalent
+        hsv_h=0.0,
 
         batch=8,
-        cache=False
-        )
+        cache=False,
+    )
 
     # print(type(results))
     # print("\n\n\n\n\n")

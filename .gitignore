@@ -9,3 +9,4 @@ test.py
 *.txt
 *.jsonl
 *.jpg
+yolo26n.pt
