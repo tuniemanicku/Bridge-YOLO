@@ -6,3 +6,6 @@
 yolo11n.pt
 /runs
 test.py
+*.txt
+*.jsonl
+*.jpg

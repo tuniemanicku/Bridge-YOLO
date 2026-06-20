@@ -12,7 +12,7 @@ def train_yolo_model():
         mosaic=0.0,
         fliplr=0.0,
         flipud=0.0,
-        degrees=180.0,
+        degrees=20.0,
         translate=0.05,
         scale=0.3,
 
@@ -20,7 +20,10 @@ def train_yolo_model():
         hsv_s = 0.3,
         hsv_v = 0.4,
 
-        perspective = 0.001
+        perspective = 0.001,
+
+        batch=8,
+        cache=False
         )
 
     # print(type(results))
